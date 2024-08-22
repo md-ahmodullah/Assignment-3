@@ -17,69 +17,53 @@
 <body class="font-manrope">
     <header class="bg-gradient-to-b from-[#a39e9e21] to-[#f1efef0e]">
         <!-- Navbar -->
-        <nav class="max-w-7xl mx-auto">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                    </div>
+        <nav class="max-w-7xl mx-auto px-4 md:px-0">
+            <div class="navbar flex items-center justify-between">
+                <div class="navbar-start border-2">
+                    <!-- Brand/Logo -->
                     <div class="flex items-center gap-1.5">
                     <p class="text-sm bg-[#ABEF5F] rounded-full"><i class="fa-solid fa-arrow-up-long text-[#1c1c1cb4] py-1 px-1.5 rotate-45"></i></p>
                     <a class="text-3xl font-extrabold text-[#212121]">Rinterio</a>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-[#737373] text-base">
-                    <li class="text-[#494949] font-extrabold"><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                    </ul>
+                <div class="navbar-center border-2 hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#737373] text-base">
+                <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+                </ul>
                 </div>
-                <div class="navbar-end space-x-4">
-                    <p class="text-base bg-[#FFFFFF] rounded-full"><i class="fa-solid fa-magnifying-glass text-[#1c1c1cb4] p-2 -rotate-12"></i></p>
-                    <p class="text-base bg-[#FFFFFF] rounded-full"><i class="fa-solid fa-cart-shopping text-[#1c1c1cb4] p-2"></i></p>
-                    <div class="flex items-center">
-                        <a class="btn bg-[#ABEF5F] rounded-full font-extrabold">Book Consult
-                        <p class="text-sm bg-[#1C1C1C] rounded-full"><i class="fa-solid fa-arrow-up-long text-[#ffffffca] py-1 px-1.5 rotate-45"></i></p>
-                        </a>
+                <div class="navbar-end border-2 space-x-5 hidden md:inline-flex">
+                <p class="text-base bg-[#FFFFFF] rounded-full"><i class="fa-solid fa-magnifying-glass text-[#1c1c1cb4] p-2 -rotate-12"></i></p>
+                <p class="text-base bg-[#FFFFFF] rounded-full"><i class="fa-solid fa-cart-shopping text-[#1c1c1cb4] p-2"></i></p>
+                <div class="flex items-center">
+                    <a class="btn bg-[#ABEF5F] rounded-full font-extrabold">Book Consult
+                    <p class="text-sm bg-[#1C1C1C] rounded-full"><i class="fa-solid fa-arrow-up-long text-[#ffffffca] py-1 px-1.5 rotate-45"></i></p>
+                    </a>
+                </div>
+                
+                </div>
+                <!-- Hamburger Icon -->
+                <div class="flex md:hidden border-2">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden">
+                            <p class="bg-white rounded-full"><i class="fa-solid fa-bars text-lg px-2.5 py-1 opacity-75"></i></p>
+                        </div>
                     </div>
-                    
                 </div>
-                </div>
+            </div>
         </nav>
 
         <!-- Banner -->
-         <div class="max-w-7xl mx-auto flex flex-col items-center gap-3">
+         <div class="max-w-7xl mx-auto flex flex-col items-center gap-3 px-6 md:px-0">
             <!-- Banner Image -->
-            <img src="assets/banner.png" alt="House Image">
+            <img class="px-6" src="assets/banner.png" alt="House Image">
             <!-- Banner Content -->
-            <div class="w-3/4 space-y-8">
-                <h1 class="font-extrabold text-6xl text-center">A barn house of this design has a striking appearance</h1>
-                <p class="font-medium text-base text-[#494949] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div class="md:w-3/4 space-y-3 md:space-y-8">
+                <h1 class="font-extrabold text-3xl lg:text-6xl text-center">A barn house of this design has a striking appearance</h1>
+                <p class="font-medium text-sm md:text-base text-[#494949] text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             </div>
             <div class="flex items-center">
                 <a class="btn bg-[#acef5f79] rounded-full font-extrabold">View Details
