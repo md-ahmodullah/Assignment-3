@@ -3,3 +3,34 @@
 .font-manrope{
     font-family: "Manrope", sans-serif;
 }
+
+.grid-bg-1{
+    background-image: url(../assets/img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-bg-2{
+    background-image: url(../assets/img2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-bg-3{
+    background-image: url(../assets/img3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-bg-4{
+    background-image: url(../assets/img4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-bg-5{
+    background-image: url(../assets/img5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
