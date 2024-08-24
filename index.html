@@ -484,52 +484,100 @@
         </section>
 
         <!-- Mortgage Calculator and Financing Advice Section -->
-        <section class="py-12 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto">
+        <section class="py-12 px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
                 <!-- Section Title -->
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">Mortgage Calculator and Financing Advice</h2>
-    
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Mortgage Calculator</h2>
                 <!-- Mortgage Calculator Form -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mortgage Calculator</h3>
-                <form class="grid grid-cols-1 gap-6 md:grid-cols-2">
-                    <!-- Loan Amount -->
-                    <div>
-                    <label for="loanAmount" class="block text-gray-700 font-medium">Loan Amount ($)</label>
-                    <input type="number" id="loanAmount" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter loan amount" />
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12">
+                    <div class="bg-slate-100 p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mortgage Calculator</h3>
+                        <form class="grid grid-cols-1 gap-6">
+                            <!-- Home price -->
+                            <div>
+                            <label for="loanAmount" class="block text-gray-700 font-medium">Home price ($)</label>
+                            <input type="text" id="loanAmount" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Home price" />
+                            </div>
+                            <!-- Down payment -->
+                            <div>
+                            <label for="loanAmount" class="block text-gray-700 font-medium">Down payment ($)</label>
+                            <input type="text" id="loanAmount" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter Down payment" />
+                            </div>
+                            <!-- Interest Rate -->
+                            <div>
+                            <label for="interestRate" class="block text-gray-700 font-medium">Interest Rate (%)</label>
+                            <input type="text" id="interestRate" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter interest rate" />
+                            </div>
+                            <!-- Loan Term -->
+                            <div>
+                            <label for="loanTerm" class="block text-gray-700 font-medium">Loan Term (years)</label>
+                            <input type="text" id="loanTerm" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter loan term" />
+                            </div>
+                            <!-- ZIP Code -->
+                            <div>
+                            <label for="loanTerm" class="block text-gray-700 font-medium">ZIP code</label>
+                            <input type="text" id="loanTerm" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter ZIP code" />
+                            </div>
+                            <!-- Calculate Button (Non-functional) -->
+                            <div class="flex items-end">
+                            <button type="button" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Calculate</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- Interest Rate -->
-                    <div>
-                    <label for="interestRate" class="block text-gray-700 font-medium">Interest Rate (%)</label>
-                    <input type="number" id="interestRate" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter interest rate" />
+                    <!-- right side -->
+                    <div class=" bg-slate-100 col-span-2 rounded-lg">
+                        <div class="pt-7 px-7 space-y-3">
+                            <h1 class="text-4xl font-bold">Monthly payment breakdown</h1>
+                            <h1 class="text-xl font-extrabold text-slate-600">Based on national average rates</h1>
+                        </div>
+                        <div class="hero-content flex-col lg:flex-row relative">
+                          <img
+                            src="assets/chart.png"
+                            class="max-w-md" />
+                            <div class="absolute top-auto left-auto">
+                                <h1 class="text-4xl font-extrabold">
+                                    <sup class="font-extrabold text-xl">$</sup>2,171<sub class="font-extrabold text-xl">/mo</sub>
+                                </h1>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 lg:w-3/4 mx-auto pt-3">
+                            <div class="grid grid-cols-4 gap-3 lg:gap-24 border border-b-gray-300 p-2">
+                                <div class="flex items-center gap-2 col-span-3">
+                                    <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+                                    <p class="text-base font-medium">Principal & interest</p>
+                                </div>
+                                <p class="col-span-1 p-3">$0000.0</p>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-3 lg:gap-24 border border-b-gray-300 p-2">
+                                <div class="flex items-center gap-2  col-span-3">
+                                    <div class="w-4 h-4 bg-green-400 rounded-full"></div>
+                                    <p class="text-base font-medium">Property tax</p>
+                                </div>
+                                <p class="border border-gray-300 p-3 rounded-lg col-span-1">$0000.0</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-4 gap-3 lg:gap-24 border border-b-gray-300 p-2">
+                                <div class="flex items-center gap-2 col-span-3">
+                                    <div class="w-4 h-4 bg-violet-500 rounded-full"></div>
+                                    <p class="text-base font-medium">Homeowner's insurance</p>
+                                </div>
+                                <p class="border border-gray-300 p-3 rounded-lg col-span-1">$0000.0</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Loan Term -->
-                    <div>
-                    <label for="loanTerm" class="block text-gray-700 font-medium">Loan Term (years)</label>
-                    <input type="number" id="loanTerm" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter loan term" />
-                    </div>
-                    <!-- Calculate Button (Non-functional) -->
-                    <div class="flex items-end">
-                    <button type="button" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Calculate</button>
-                    </div>
-                </form>
-                </div>
-    
-                <!-- Financing Advice Section -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Financing Advice</h3>
-                <p class="text-gray-700">Understanding mortgage options is crucial for making informed decisions. Explore various loan types, compare interest rates, and consider long-term costs. Our experts can guide you through fixed-rate vs. adjustable-rate mortgages, down payment strategies, and improving credit scores to secure better loan terms.</p>
-                </div>
+                 </div>  
             </div>
         </section>
 
         <!-- FAQs Section -->
          <section class="bg-slate-100">
-            <div class="py-20 max-w-7xl mx-auto px-6 md:px-0">
-                <div class="hero-content flex-col lg:flex-row gap-16 md:gap-10 ">
+            <div class="py-8 lg:py-20 max-w-7xl mx-auto px-6 md:px-0">
+                <div class="hero-content flex-col lg:flex-row gap-8 md:gap-10 ">
                   <img
                     src="assets/faq.png"
-                    class="max-w-sm rounded-lg shadow-2xl p-14 hidden lg:flex" />
+                    class="max-w-52 lg:max-w-sm rounded-lg shadow-2xl p-7 lg:p-14" />
                   <div class="space-y-3">
                     <h1 class="text-4xl font-bold pl-4">FAQs</h1>
                     <div class="collapse collapse-arrow bg-white">
