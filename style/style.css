@@ -10,3 +10,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.bg-virtual{
+    background-image: url(../assets/virtual1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
