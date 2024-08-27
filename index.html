@@ -520,7 +520,7 @@
                             </div>
                             <!-- Calculate Button (Non-functional) -->
                             <div class="flex items-end">
-                            <button type="button" class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Calculate</button>
+                            <button type="button" class="w-full bg-[#ABEF5F] text-black font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Calculate</button>
                             </div>
                         </form>
                     </div>
@@ -621,53 +621,60 @@
          </section>
 
         <!-- Unique meet team & reviews section -->
-        <section class="px-6 lg:px-0 py-12 lg:py-24 space-y-8">
+        <section class="bg-slate-100 my-2 px-6 lg:px-0 py-12 space-y-10">
             <!-- Meet team -->
-            <div class="hero bg-base-200 relative">
-                <div class="hero-content flex-col lg:flex-row lg:gap-24">
+            <div class="hero relative max-w-5xl mx-auto">
+                <div class="hero-content flex-col lg:flex-row lg:gap-32 py-6 lg:py-0">
                 <img
-                    src="assets/meet.jpg"
-                    class="max-w-md shadow-md" />
-                <div class="bg-black p-5 flex flex-col items-center justify-center gap-1 absolute w-44 left-1/3">
+                    src="assets/Rectangle.png"
+                    class="w-full lg:max-w-sm shadow-md" />
+                <div class="bg-gray-700 p-5 flex flex-col items-center justify-center gap-1 absolute w-44 left-8 top-36 lg:top-24 lg:left-1/3">
                     <div class="avatar online">
                         <div class="w-16 rounded-full">
                           <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                         </div>
                     </div>
                     <h2 class="text-base text-gray-100 font-medium">Dianne Russel</h2>
-                    <p class="text-[10px] text-gray-500 font-medium text-justify">An architect who specializes in leadership, organizational development, and strategic planning.</p>
+                    <p class="text-[10px] text-gray-400 font-medium text-justify">An architect who specializes in leadership, organizational development, and strategic planning.</p>
                 </div>
-                <div class="lg:pl-12">
-                    <h1 class="text-5xl font-bold">Meet and Talk with our best architects</h1>
-                    <p class="py-6">
+                <div class="lg:pl-12 w-full lg:w-1/2">
+                    <h1 class="text-3xl font-bold">Meet and Talk with our best architects</h1>
+                    <p class="py-6 text-gray-600">
                         Engage with our talented architects to bring your vision to life. Collaborate on innovative designs that reflect your style, needs, and preferences while ensuring functionality and sustainability in every project.
                     </p>
-                    <button class="btn btn-primary">See all teams</button>
+                    <button class="btn bg-[#ABEF5F] shadow-md">See all teams</button>
+                    <button class="btn btn-transparent text-base">How it works <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 </div>
             </div>
             <!-- reviews -->
-            <div class="hero bg-base-200 relative">
-                <div class="hero-content flex-col lg:flex-row-reverse lg:gap-24">
-                <img
-                    src="assets/meet.jpg"
-                    class="max-w-md shadow-md" />
-                <div class="bg-black p-5 flex flex-col items-center justify-center gap-1 absolute w-44 right-1/3">
-                    <div class="avatar online">
-                        <div class="w-16 rounded-full">
-                          <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                        </div>
+            <div class="hero relative max-w-5xl mx-auto">
+                <div class="hero-content bg-black flex-col-reverse items-start lg:flex-row-reverse justify-evenly lg:gap-5 py-8 lg:py-5">
+                    <img
+                        src="assets/reviews.png"
+                        class="h-64 w-56 lg:h-80 lg:w-64 p-5 lg:p-10" />
+                    <div class="absolute z-10 bottom-52 right-16 lg:right-16 lg:bottom-48 bg-white border-2 border-black rounded-full">
+                        <p class="text-black text-2xl px-3.5 py-2"><i class="fa-solid fa-quote-left"></i></p>
                     </div>
-                    <h2 class="text-base text-gray-100 font-medium">Dianne Russel</h2>
-                    <p class="text-[10px] text-gray-500 font-medium text-justify">An architect who specializes in leadership, organizational development, and strategic planning.</p>
-                </div>
-                <div class="lg:pr-12">
-                    <h1 class="text-5xl font-bold">Meet and Talk with our best architects</h1>
-                    <p class="py-6">
-                        Engage with our talented architects to bring your vision to life. Collaborate on innovative designs that reflect your style, needs, and preferences while ensuring functionality and sustainability in every project.
-                    </p>
-                    <button class="btn btn-primary">See all teams</button>
-                </div>
+                    <div class="bg-white p-3 flex flex-col items-center justify-center gap-1 absolute w-40 bottom-24 right-5 lg:right-2 lg:bottom-20 z-0">
+                        <h2 class="text-base text-black font-extrabold">Jacob Molen</h2>
+                        <p class="text-orange-400 text-xs pb-1 space-x-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="text-[10px] text-gray-500 font-medium text-justify">I am thrilled with my new home! The service was exceptional.</p>
+                    </div>
+                    <div class="lg:pl-12 p-5 w-full lg:w-1/2">
+                        <h1 class="text-3xl font-bold text-gray-100">What we have done & <br>What our customers say</h1>
+                        <p class="py-6 text-gray-400">
+                            Explore our portfolio of completed projects showcasing our expertise in real estate and interior design. Read testimonials from satisfied clients who have trusted us to transform their spaces.
+                        </p>
+                        <button class="btn bg-[#ABEF5F] shadow-md"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="btn bg-transparent text-base border-none"><i class="fa-solid fa-arrow-right text-white"></i></button>
+                    </div>
                 </div>
             </div>
         </section>
